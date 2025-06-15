@@ -1,0 +1,61 @@
+<section id="planos" class="plans-section">
+  <video #backgroundVideo class="background-video" autoplay loop muted playsinline>
+    <source src="assets/videos/backgroundPricing.mp4" type="video/mp4">
+  </video>
+  <div class="plans-overlay"></div>
+  <div class="plans-container">
+    <h2 class="section-title">NOSSOS PLANOS</h2>
+    
+    <div class="plans-tabs">
+      <button class="tab-button" 
+              [class.active]="activeTab === 'musculacao'"
+              (click)="setActiveTab('musculacao')">
+        MUSCULAÇÃO
+      </button>
+      <button class="tab-button"
+              [class.active]="activeTab === 'outros'"
+              (click)="setActiveTab('outros')">
+        OUTROS FORMATOS
+      </button>
+    </div>
+
+    <div class="plans-content" [ngSwitch]="activeTab">
+      <div *ngSwitchCase="'musculacao'" class="plans-grid">
+        <div *ngFor="let plan of musclePlans" 
+             class="plan-card" 
+             [class.highlight]="plan.highlight">
+          <div class="plan-header">
+            <h4 class="plan-title">{{plan.title}}</h4>
+            <div class="plan-price">
+              <span class="price">{{plan.price}}</span>
+              <span *ngIf="plan.installments" class="installments">{{plan.installments}}</span>
+            </div>
+          </div>
+          <div class="payment-methods">
+            <span *ngFor="let method of plan.paymentMethods" class="payment-method">
+              {{method}}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div *ngSwitchCase="'outros'" class="plans-grid">
+        <div *ngFor="let plan of otherPlans" class="plan-card">
+          <div class="plan-header">
+            <h4 class="plan-title">{{plan.title}}</h4>
+            <div class="plan-price">
+              <span class="price">{{plan.price}}</span>
+              <span *ngIf="plan.installments" class="installments">{{plan.installments}}</span>
+              <span *ngIf="plan.totalPrice" class="total-price">({{plan.totalPrice}})</span>
+            </div>
+          </div>
+          <div class="payment-methods">
+            <span *ngFor="let method of plan.paymentMethods" class="payment-method">
+              {{method}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
