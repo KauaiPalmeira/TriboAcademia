@@ -1,0 +1,35 @@
+<section id="galeria" class="carousel-section" #carouselSection>
+  <img src="assets/images/losangulosesquerda.png" alt="Losângulo Esquerdo" class="losango-esquerda">
+  <img src="assets/images/losangulosdireita.png" alt="Losângulo Direito" class="losango-direita">
+  
+  <div class="carousel-container">
+    <div class="triple-logo">
+      <img src="assets/logos/tripletribo.png" alt="Triple Tribo Logo">
+    </div>
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        <div class="carousel-content">
+          <video #carouselVideo *ngIf="items[currentIndex].type === 'video'" [src]="items[currentIndex].src" autoplay loop muted playsinline preload="auto"></video>
+          <img *ngIf="items[currentIndex].type === 'image'" [src]="items[currentIndex].src" alt="Carousel Image">
+        </div>
+        <div class="carousel-controls">
+          <button class="control-button" (click)="prev()">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="control-button" (click)="next()">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="thumbnails-container">
+        <div *ngFor="let item of items; let i = index" 
+             class="thumbnail" 
+             [class.active]="i === currentIndex"
+             (click)="goTo(i)">
+          <img [src]="item.type === 'video' ? 'assets/images/switchfoto1.jpg' : item.src" 
+               [alt]="'Thumbnail ' + (i + 1)">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 

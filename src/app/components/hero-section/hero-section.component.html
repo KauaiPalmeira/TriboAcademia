@@ -1,0 +1,21 @@
+<section id="inicio" class="hero-section">
+  <div class="hero-content">
+    <div class="text-content">
+      <h1>VEM TREINAR COM A GENTE!</h1>
+      <p><span #typingText></span></p>
+    </div>
+    <div class="video-container">
+      <video #videoPlayer loop muted playsinline>
+        <source src="assets/videos/videotoppage.mp4" type="video/mp4">
+      </video>
+      <div class="video-controls">
+        <button class="control-button play-toggle" (click)="togglePlay()">
+          <i class="fas" [class.fa-pause]="isPlaying" [class.fa-play]="!isPlaying"></i>
+        </button>
+        <button class="control-button sound-toggle" (click)="toggleSound()">
+          <i class="fas" [class.fa-volume-mute]="isMuted" [class.fa-volume-up]="!isMuted"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section> 
