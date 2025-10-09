@@ -34,11 +34,6 @@ export class PlansComponent implements AfterViewInit {
       paymentMethods: ['CRÉDITO', 'DÉBITO', 'PIX', 'ESPÉCIE']
     },
     {
-      title: 'MENSAL ESPÉCIE',
-      price: 'R$ 90,00',
-      paymentMethods: ['ESPÉCIE']
-    },
-    {
       title: 'ANUAL',
       price: 'R$ 80,00',
       installments: '12X',

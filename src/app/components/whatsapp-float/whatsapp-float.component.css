@@ -13,8 +13,17 @@
   font-size: 1.15rem;
   font-weight: 700;
   text-decoration: none;
-  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s, opacity 0.4s;
   cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+.whatsapp-float.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto; /* Permite cliques quando visível */
 }
 .whatsapp-float:hover {
   background: #1ebe57;

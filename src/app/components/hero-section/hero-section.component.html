@@ -5,17 +5,22 @@
       <p><span #typingText></span></p>
     </div>
     <div class="video-container">
-      <video #videoPlayer loop muted playsinline>
-        <source src="assets/videos/videotoppage.mp4" type="video/mp4">
-      </video>
-      <div class="video-controls">
-        <button class="control-button play-toggle" (click)="togglePlay()">
-          <i class="fas" [class.fa-pause]="isPlaying" [class.fa-play]="!isPlaying"></i>
-        </button>
-        <button class="control-button sound-toggle" (click)="toggleSound()">
-          <i class="fas" [class.fa-volume-mute]="isMuted" [class.fa-volume-up]="!isMuted"></i>
-        </button>
-      </div>
-    </div>
+  <video #videoPlayer loop muted playsinline>
+    <source src="assets/videos/videotoppage.mp4" type="video/mp4">
+  </video>
+
+  <button class="unmute-prompt" *ngIf="isMuted" (click)="toggleSound()">
+    <i class="fas fa-volume-mute"></i>
+    <span>Ativar Som</span>
+  </button>
+  <div class="video-controls">
+    <button class="control-button play-toggle" (click)="togglePlay()">
+      <i class="fas" [class.fa-pause]="isPlaying" [class.fa-play]="!isPlaying"></i>
+    </button>
+    <button class="control-button sound-toggle" (click)="toggleSound()">
+      <i class="fas" [class.fa-volume-mute]="isMuted" [class.fa-volume-up]="!isMuted"></i>
+    </button>
+  </div>
+</div>
   </div>
 </section> 
