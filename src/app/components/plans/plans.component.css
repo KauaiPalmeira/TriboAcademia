@@ -152,6 +152,40 @@
   border: 1px solid rgba(253, 99, 0, 0.3);
 }
 
+.whatsapp-cta-container {
+  position: relative; /* Garante que fique acima do overlay */
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: 60px; /* Espaço acima do botão */
+}
+
+.whatsapp-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-cta-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-cta-button i {
+  font-size: 2rem;
+}
+
+
 @media (max-width: 768px) {
   .plans-tabs {
     flex-direction: column;
@@ -166,4 +200,14 @@
   .plans-grid {
     grid-template-columns: 1fr;
   }
-} 
+
+  /* Seus novos estilos para o botão, corretamente dentro do bloco */
+  .whatsapp-cta-button {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+  
+  .whatsapp-cta-button i {
+    font-size: 1.5rem;
+  }
+}

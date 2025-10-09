@@ -2,13 +2,23 @@
   <div class="logo-container">
     <img src="assets/logos/tribologo.png" alt="Tribo Academia Logo" class="logo">
   </div>
-  <nav class="nav-menu">
+
+  <button 
+    class="hamburger-button" 
+    (click)="toggleMenu()" 
+    [class.is-active]="menuAberto">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav class="nav-menu" [class.is-open]="menuAberto">
     <ul>
-      <li><a class="nav-link" href="#inicio">Início</a></li>
-      <li><a class="nav-link" href="#galeria">Galeria</a></li>
-      <li><a class="nav-link" href="#planos">Planos</a></li>
-      <li><a class="nav-link" href="#contatos">Contatos</a></li>
-      <li><a class="nav-link" href="#localizacao">Localização</a></li>
+      <li><a class="nav-link" href="#inicio" (click)="closeMenu()">Início</a></li>
+      <li><a class="nav-link" href="#galeria" (click)="closeMenu()">Galeria</a></li>
+      <li><a class="nav-link" href="#planos" (click)="closeMenu()">Planos</a></li>
+      <li><a class="nav-link" href="#contatos" (click)="closeMenu()">Contatos</a></li>
+      <li><a class="nav-link" href="#localizacao" (click)="closeMenu()">Localização</a></li>
     </ul>
   </nav>
-</header> 
+</header>

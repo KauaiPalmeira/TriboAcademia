@@ -10,7 +10,7 @@
   align-items: center;
   overflow: hidden;
   padding-top: 80px; /* Espaço para o header */
-  padding-bottom: 10px; /* Espaço extra embaixo */
+  padding-bottom: 20px;
 }
 
 .hero-section::before {
@@ -96,3 +96,82 @@
 .control-button:hover {
   background: white;
 } 
+
+/* --- ADICIONADO: Media Query para responsividade --- */
+@media (max-width: 992px) { /* Breakpoint para tablets e telas menores */
+  .hero-content {
+    /* Altera a direção do flex para empilhar os itens verticalmente */
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem; /* Adiciona um espaço entre o texto e o vídeo */
+  }
+
+  .text-content {
+    /* Centraliza o texto quando estiver empilhado */
+    text-align: center;
+    max-width: 100%; /* Ocupa a largura disponível */
+    order: 1; /* Opcional: Coloca o texto depois do vídeo */
+  }
+
+  .video-container {
+    order: 2; /* Opcional: Coloca o vídeo antes do texto */
+    width: 280px;
+    height: 500px;
+  }
+
+  .text-content h1 {
+    font-size: 2.8rem; /* Diminui a fonte do título */
+  }
+
+  .text-content p {
+    font-size: 1.3rem; /* Diminui a fonte do parágrafo */
+  }
+}
+
+.unmute-prompt {
+  position: absolute;
+  /* --- LÓGICA DE CENTRALIZAÇÃO --- */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  /* --- TAMANHO MAIOR --- */
+  gap: 12px;
+  padding: 18px 30px;
+  border-radius: 50px; /* Mais arredondado para o novo tamanho */
+  font-size: 1.2rem;   /* Fonte maior */
+  font-weight: 700;
+  
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.unmute-prompt:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: #fff;
+  transform: translate(-50%, -50%) scale(1.05); /* Mantém a centralização ao escalar */
+}
+
+.unmute-prompt i {
+  /* --- ÍCONE MAIOR --- */
+  font-size: 1.8rem;
+}
+
+@media (max-width: 480px) { /* Breakpoint para celulares pequenos */
+  .text-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .video-container {
+    width: 250px;
+    height: 450px;
+  }
+}

@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
   standalone: false
 })
 export class HeaderComponent {
-} 
+
+  // Propriedade para controlar o estado do menu
+  menuAberto = false;
+
+  // Função para abrir/fechar o menu
+  toggleMenu(): void {
+    this.menuAberto = !this.menuAberto;
+  }
+  
+  // Função para fechar o menu ao clicar em um link
+  closeMenu(): void {
+    this.menuAberto = false;
+  }
+  
+}
