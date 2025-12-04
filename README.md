@@ -14,10 +14,10 @@ A aplicação utiliza as seguintes tecnologias principais:
 
 * **Angular** 
 * **TypeScript**
-* **Vercel (Deploy**
+* **Vercel (Deploy)**
 
 
-## 📦 Como Executar o Projeto (Bash)
+## 📦 Como Executar o Projeto
 
 Siga os passos abaixo para clonar o repositório, instalar as dependências e rodar a aplicação localmente:
 
@@ -52,7 +52,7 @@ Página inicial com seção principal (Hero) de alto impacto.
 
 Seção detalhada de planos.
 
-Galeria de imagens (se aplicável ao projeto).
+Carrosel de imagens
 
 Layout totalmente responsivo (Desktop, Tablet e Mobile).
 
