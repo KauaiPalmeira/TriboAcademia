@@ -1,63 +1,68 @@
-# TriboAcademia
-<<<<<<< HEAD
+## 🏋️‍♂️ Tribo Academia — Landing Page
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
+Este é o repositório oficial da **Landing Page** desenvolvida para a **Tribo Academia**, localizada na Messejana.
 
-## Development server
+O projeto foi construído em **Angular** com o objetivo de apresentar as informações da academia de forma **clara, moderna e totalmente responsiva**.
 
-To start a local development server, run:
+Se quiser acessar o site só entrar aqui: https://triboacademia.vercel.app
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+A aplicação utiliza as seguintes tecnologias principais:
+
+* **Angular** 
+* **TypeScript**
+* **Vercel (Deploy**
+
+
+## 📦 Como Executar o Projeto (Bash)
+
+Siga os passos abaixo para clonar o repositório, instalar as dependências e rodar a aplicação localmente:
+
+### 1. Clonar o Repositório
+
+
+```bash
+
+git clone url-do-projeto
+cd pra-dentro-do-rep
+```
+
+### 2. Instalar as Dependências
+
+```bash
+npm install
+```
+### 3. Executar a Aplicação
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+### 4. Acessar no Navegador
+A aplicação estará disponível em:
 ```bash
-ng generate component component-name
+http://localhost:4200/
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 🖼️ Funcionalidades Principais
+Página inicial com seção principal (Hero) de alto impacto.
 
-```bash
-ng generate --help
-```
+Seção detalhada de planos.
 
-## Building
+Galeria de imagens (se aplicável ao projeto).
 
-To build the project run:
+Layout totalmente responsivo (Desktop, Tablet e Mobile).
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### 📬 Contato
+Gostou do que viu?
+Para solicitar serviços de desenvolvimento, entre em contato:
 
-## Running unit tests
+👤Desenvolvedor: Kauai Palmeira
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
-Landing page for a Gym
->>>>>>> 023a9b64c4c2d12598e6513ceb25f1e20a0748ed
+📧E-mail: kauaipalmeira@hotmail.com
+Linkedin: https://www.linkedin.com/in/kauai-palmeira-826126307/
+GitHub: Kauai Palmeira
