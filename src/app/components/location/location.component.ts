@@ -19,7 +19,7 @@ export class LocationComponent {
 
   businessHours = [
     { days: 'Segunda a Sexta', hours: '05:30 às 22:00' },
-    { days: 'Sábado', hours: '06:00 às 12:00' },
+    { days: 'Sábado', hours: '06:00 às 14:00' },
     { days: 'Domingo', hours: '08:00 às 12:00' }
   ];
 
