@@ -23,13 +23,13 @@ export class PlansComponent implements AfterViewInit {
   musclePlans: Plan[] = [
     {
       title: 'MENSAL',
-      price: 'R$ 99,00',
+      price: 'R$ 105,00',
       paymentMethods: ['CRÉDITO', 'DÉBITO', 'PIX'],
       highlight: true
     },
     {
       title: 'SEMESTRAL',
-      price: 'R$ 90,00',
+      price: 'R$ 95,00',
       installments: '06X',
       paymentMethods: ['CRÉDITO', 'DÉBITO', 'PIX', 'ESPÉCIE']
     },
@@ -50,12 +50,12 @@ export class PlansComponent implements AfterViewInit {
     },
     {
       title: 'SEMI PERSONALIZADO',
-      price: 'R$ 350,00',
+      price: 'R$ 370,00',
       paymentMethods: ['MENSAL 3X SEMANA']
     },
     {
       title: 'ESPECIAL',
-      price: 'R$ 550,00',
+      price: 'R$ 570,00',
       paymentMethods: ['MENSAL 3X SEMANA']
     },
     {
@@ -67,16 +67,16 @@ export class PlansComponent implements AfterViewInit {
     },
     {
       title: 'SEMI PERSONALIZADO',
-      price: 'R$ 280,00',
+      price: 'R$ 283,30',
       installments: '06X',
-      totalPrice: 'R$ 1.680,00',
+      totalPrice: 'R$ 1.700,00',
       paymentMethods: ['SEMESTRAL']
     },
     {
       title: 'SEMI PERSONALIZADO',
-      price: 'R$ 250,00',
+      price: 'R$ 251,66',
       installments: '12X',
-      totalPrice: 'R$ 3.000,00',
+      totalPrice: 'R$ 3.020,00',
       paymentMethods: ['ANUAL']
     }
   ];
