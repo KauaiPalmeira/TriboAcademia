@@ -60,9 +60,9 @@ export class PlansComponent implements AfterViewInit {
     },
     {
       title: 'SEMI PERSONALIZADO',
-      price: 'R$ 300,00',
+      price: 'R$ 306,66',
       installments: '03X',
-      totalPrice: 'R$ 900,00',
+      totalPrice: 'R$ 920,00',
       paymentMethods: ['TRIMESTRAL']
     },
     {
